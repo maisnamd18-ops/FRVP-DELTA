@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-from delta_api import DeltaClient
+from delta_rest_client import DeltaRestClient, OrderType, TimeInForce
 from frvp import frvp_profile, previous_session_profile
 from strategy import detect_poc_signal
 from risk import position_size
